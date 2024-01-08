@@ -1,0 +1,151 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins:ital,wght@0,100;0,300;0,400;0,800;1,100&family=Roboto:wght@300;400;700&display=swap');
+
+body{
+    font-family: "Poppins",sans-serif;
+    background-color: rgb(207, 206, 206);
+    overflow: hidden; 
+}
+
+
+.tabla-container:hover{
+    box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.75);
+    transition: 0.8s;
+}
+
+.tabla-container{
+    border: 1px solid rgb(167, 156, 156);
+    transition: 0.8s;
+    position: relative;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgb(26, 25, 25);
+    height: 70px;
+    color: white;
+ }
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+header nav p{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+main{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 100px; 
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 4rem;
+    padding: 10px;
+    background-color: lightskyblue;
+}
+
+.label{
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#item-input, #id-input{
+    margin-left: 0.5rem;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    border: 0.5px solid;
+    margin-right: 0.5rem;
+}
+
+#id-input{
+    width: 50px;
+}
+
+#stock-input{
+    margin-left: 0.5rem;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    border: none;
+    width: 60px;
+    border: 0.5px solid;
+}
+
+.input-boton, .input-editar{
+    margin-left: 1rem;
+    width: 6rem;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+/* Boton editar */
+.input-editar{
+    display: none;
+}
+
+
+.dt-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    background-color: blanchedalmond;
+}
+
+.dt-container table{
+    border-collapse: separate;
+    border-spacing: 10px;
+    width: 100%;
+    margin-left: 130px;
+}
+
+
+
+table td{
+    padding: 0 10px;
+    text-align: center;
+}
+
+.opcion{
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+}
+/* Activar el display a block */
+.block{
+    display: none;
+    position: absolute;
+    background-color: rgba(10, 10, 10, 0.527);
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+}
+
